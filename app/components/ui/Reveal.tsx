@@ -1,13 +1,14 @@
 "use client";
 
-import { motion } from "framer-motion";
-import React, { HTMLProps } from "react";
+import { motion, useAnimation } from "framer-motion";
+import React, { useEffect, useRef } from "react";
+import { useInView } from "framer-motion";
 
 interface Props {
   children: React.ReactNode;
-  width?: "100%" | "fit-content";
-  cssPropertyMotion: string;  
-  cssProperty: string;
+  width?: "100vw" | "fit-content";
+  cssPropertyMotion?: string | "";
+  cssProperty?: string | "";
   height?: "100vh" | "fit-content";
 }
 
@@ -18,14 +19,23 @@ const Reveal: React.FC<Props> = ({
   height,
   cssProperty,
 }) => {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
+  const mainControl = useAnimation();
+
+  useEffect(() => {
+    if (isInView) {
+      mainControl.start("visible");
+    }
+  }, [isInView]);
   return (
     <div
+      ref={ref}
       style={{
         position: "relative",
         width,
         overflow: "hidden",
         height,
-        backgroundColor: "red",
       }}
       className={`${cssProperty}`}
     >
@@ -36,7 +46,7 @@ const Reveal: React.FC<Props> = ({
           visible: { opacity: 1, y: 0 },
         }}
         initial="hidden"
-        animate="visible"
+        animate={mainControl}
         transition={{ duration: 0.5, delay: 0.25 }}
       >
         {children}
