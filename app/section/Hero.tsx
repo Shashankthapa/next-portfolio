@@ -9,7 +9,7 @@ const Hero = () => {
     <Reveal
       width="100%"
       cssPropertyMotion="flex flex-col lg:flex-row justify-center items-center px-5 w-full gap-3 sm:gap-5 md:gap-10"
-      cssProperty="flex items-center h-fit lg:100vh"
+      cssProperty="flex items-center h-fit py-5 lg:h-screen"
     >
       <div className="font-sans text-4xl md:text-5xl lg:text-6xl w-full sm:w-full lg:md:w-[40%]">
         <div className="mt-10 font-extrabold mb-4 lg:mb-10">
@@ -31,7 +31,7 @@ const Hero = () => {
       </div>
       <div className="relative w-[50%] lg:w-[20%] aspect-square">
         <Image
-          className="rounded-full w-[70%] sm:w-fit "
+          className="rounded-full sm:w-fit "
           src="/images/shashank.jpeg"
           alt="Shashank"
           fill

@@ -22,8 +22,8 @@ const ExperienceSection: React.FC<ExperienceProps> = ({
       </div>
 
       <ul className="space-y-2">
-        {companyAccomplishments.map((accomplishments) => (
-          <li>{accomplishments}</li>
+        {companyAccomplishments.map((accomplishments, id) => (
+          <li key={id}>{accomplishments}</li>
         ))}
       </ul>
     </div>
