@@ -12,7 +12,7 @@ const ExperienceSection: React.FC<ExperienceProps> = ({
   companyAccomplishments,
 }) => {
   return (
-    <div className="px-5 w-full sm:w-[55%] space-y-2">
+    <div className="mt-3 px-5 w-full sm:w-[55%] space-y-2">
       <div>
         <h1 className="text-sm sm:text-2xl font-bold">
           {/* DXP Systems, Pune (2023-2024) */}

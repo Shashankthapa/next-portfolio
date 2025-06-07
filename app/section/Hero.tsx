@@ -6,14 +6,14 @@ import Button from "../components/ui/Button";
 const Hero = () => {
   return (
     <Reveal
-      width="100vw"
+      width="100%"
       cssPropertyMotion="flex flex-col lg:flex-row justify-center items-center px-5 w-full gap-3 sm:gap-5 md:gap-10"
       cssProperty="flex items-center h-fit lg:h-[90vh]"
     >
-      <div className="font-sans text-4xl md:text-5xl lg:text-6xl w-full sm:w-full lg:md:w-[60%]">
-        <div className="py-5 font-extrabold">
+      <div className="font-sans text-4xl md:text-5xl lg:text-6xl w-full sm:w-full lg:md:w-[50%]">
+        <div className="mt-10 font-extrabold mb-4 lg:mb-10">
           <h1>HI SHASHANK HERE.</h1>
-          <h1 className="text-sm sm:text-2xl mb-5">
+          <h1 className="text-sm sm:text-2xl">
             I MAKE PIXEL PERFECT WEBSITES
           </h1>
         </div>

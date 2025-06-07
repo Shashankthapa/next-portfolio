@@ -4,7 +4,7 @@ import Image from "next/image";
 const Header = () => {
   return (
       <div className="flex w-full justify-center">
-        <div className="flex w-full md:w-[50%] items-center p-2">
+        <div className="flex w-full md:w-[40%] items-center p-2">
           <div className="relative w-[10%] aspect-square">
             <Image
               className="rounded-xl"

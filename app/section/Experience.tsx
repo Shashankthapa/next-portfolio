@@ -13,7 +13,7 @@ const Experience = () => {
         <div className="text-center text-2xl sm:text-4xl font-extrabold">
           EXPERIENCE
         </div>
-        <div className="flex flex-col items-end mt-10">
+        <div className="flex flex-col items-end mt-5 md:lg:mt-10">
           <ExperienceSection
             companyName="DXP Systems, Pune (2023-2024)"
             companyPosition="Software Developer"

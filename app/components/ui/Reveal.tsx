@@ -6,7 +6,7 @@ import { useInView } from "framer-motion";
 
 interface Props {
   children: React.ReactNode;
-  width?: "100vw" | "fit-content";
+  width?: "100%" | "fit-content";
   cssPropertyMotion?: string | "";
   cssProperty?: string | "";
   // height?: "100vh" | "fit-content";
