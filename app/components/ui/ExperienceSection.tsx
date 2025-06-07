@@ -12,21 +12,23 @@ const ExperienceSection: React.FC<ExperienceProps> = ({
   companyAccomplishments,
 }) => {
   return (
-    <div className="mt-3 px-5 w-full sm:w-[55%] space-y-2">
-      <div>
-        <h1 className="text-sm sm:text-2xl font-bold">
+    // <div className="mt-3 px-5 w-full sm:w-[55%] space-y-2">
+    <>
+      <ul>
+        <li className="lg:list-disc lg:-m-1 text-sm sm:text-2xl font-bold">
           {/* DXP Systems, Pune (2023-2024) */}
           {companyName}
-        </h1>
+        </li>
         <p className="italic">{companyPosition}</p>
-      </div>
+      </ul>
 
-      <ul className="space-y-2">
+      <ul className="space-y-2 list-disc ml-4">
         {companyAccomplishments.map((accomplishments, id) => (
           <li key={id}>{accomplishments}</li>
         ))}
       </ul>
-    </div>
+    </>
+    // </div>
   );
 };
 

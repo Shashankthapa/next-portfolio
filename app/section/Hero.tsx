@@ -7,6 +7,7 @@ import TechStack from "./TechStack";
 const Hero = () => {
   return (
     <Reveal
+      id = "hero"
       width="100%"
       cssPropertyMotion="flex flex-col lg:flex-row justify-center items-center px-5 w-full gap-3 sm:gap-5 md:gap-10"
       cssProperty="flex items-center h-fit py-5 lg:h-screen"
@@ -25,7 +26,7 @@ const Hero = () => {
         <div>
           <TechStack />
         </div>
-        <div>
+        <div className="">
           <Button />
         </div>
       </div>

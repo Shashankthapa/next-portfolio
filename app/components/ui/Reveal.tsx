@@ -9,6 +9,7 @@ interface Props {
   width?: "100%" | "fit-content";
   cssPropertyMotion?: string | "";
   cssProperty?: string | "";
+  id: string;
 }
 
 const Reveal: React.FC<Props> = ({
@@ -16,6 +17,7 @@ const Reveal: React.FC<Props> = ({
   cssPropertyMotion,
   width,
   cssProperty,
+  id,
 }) => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
@@ -28,6 +30,7 @@ const Reveal: React.FC<Props> = ({
   }, [isInView]);
   return (
     <div
+      id={id}
       ref={ref}
       style={{
         position: "relative",
