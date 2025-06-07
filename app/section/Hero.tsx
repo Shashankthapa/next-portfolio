@@ -7,7 +7,6 @@ const Hero = () => {
   return (
     <Reveal
       width="100vw"
-      height="100vh"
       cssPropertyMotion="flex flex-col lg:flex-row justify-center items-center px-5 w-full gap-3 sm:gap-5 md:gap-10"
       cssProperty="flex items-center"
     >
