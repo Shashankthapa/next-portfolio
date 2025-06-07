@@ -8,10 +8,8 @@ const Hero = () => {
   return (
     <Reveal
       width="100%"
-      height="100vh"
       cssPropertyMotion="flex flex-col lg:flex-row justify-center items-center px-5 w-full gap-3 sm:gap-5 md:gap-10"
-      cssProperty="flex items-center"
-      // h-fit lg:h-[90vh]
+      cssProperty="flex items-center h-fit lg:100vh"
     >
       <div className="font-sans text-4xl md:text-5xl lg:text-6xl w-full sm:w-full lg:md:w-[40%]">
         <div className="mt-10 font-extrabold mb-4 lg:mb-10">

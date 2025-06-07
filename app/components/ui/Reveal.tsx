@@ -9,7 +9,6 @@ interface Props {
   width?: "100%" | "fit-content";
   cssPropertyMotion?: string | "";
   cssProperty?: string | "";
-  height?: "100vh" | "fit-content";
 }
 
 const Reveal: React.FC<Props> = ({
@@ -17,7 +16,6 @@ const Reveal: React.FC<Props> = ({
   cssPropertyMotion,
   width,
   cssProperty,
-  height
 }) => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
@@ -35,7 +33,6 @@ const Reveal: React.FC<Props> = ({
         position: "relative",
         width,
         overflow: "hidden",
-        height
       }}
       className={`${cssProperty}`}
     >
