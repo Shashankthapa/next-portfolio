@@ -5,12 +5,12 @@ import Reveal from "../components/ui/Reveal";
 
 const Project = () => {
   return (
-    <Reveal id = "project">
-      <div className="flex flex-col items-center mt-10 h-fit md:lg:h-screen overflow-hidden">
+    <Reveal id="project">
+      <div className="flex flex-col items-center mt-10 h-fit overflow-hidden">
         <div className="text-center text-2xl sm:text-4xl font-extrabold p-10">
           <h1>PROJECTS</h1>
         </div>
-        <div className="transition-transform duration-300 transform hover:scale-101 flex flex-col items-end mt-5 md:lg:mt-10 ">
+        <div className="flex flex-col items-end mt-5 md:lg:mt-10 ">
           <div className="mt-3 px-5 w-full lg:w-[55%] space-y-5 md:lg:space-y-9">
             <ProjectCard
               projectSrc="https://spotify-profile.herokuapp.com/"
