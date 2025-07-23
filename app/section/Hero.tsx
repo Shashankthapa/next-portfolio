@@ -7,7 +7,7 @@ import TechStack from "./TechStack";
 const Hero = () => {
   return (
     <Reveal
-      id = "hero"
+      id="hero"
       width="100%"
       cssPropertyMotion="flex flex-col lg:flex-row justify-center items-center px-5 w-full gap-3 sm:gap-5 md:gap-10"
       cssProperty="flex items-center h-fit py-5 lg:h-screen"
@@ -15,7 +15,7 @@ const Hero = () => {
       <div className="font-sans text-4xl md:text-5xl lg:text-6xl w-full sm:w-full lg:md:w-[40%]">
         <div className="mt-10 font-extrabold mb-4 lg:mb-10">
           <h1>HI SHASHANK HERE.</h1>
-          <h1 className="text-sm sm:text-2xl">I MAKE PIXEL PERFECT WEBSITES</h1>
+          <p className="text-sm sm:text-2xl">I MAKE PIXEL PERFECT WEBSITES</p>
         </div>
         <div className="text-sm font-bold w-full">
           MERN Stack Developer with 2 years of experience building performant,
