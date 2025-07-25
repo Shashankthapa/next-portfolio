@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Shashank Thapa",
+  title: "Shashank Thapa Portfolio",
   description:
     "Showcase of innovative web development projects and design skills. Explore my portfolio to see real-world applications and creative solutions.",
 };
