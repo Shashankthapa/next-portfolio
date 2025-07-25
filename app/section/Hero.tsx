@@ -17,11 +17,9 @@ const Hero = () => {
           <h1>HI SHASHANK HERE.</h1>
           <p className="text-sm sm:text-2xl">I MAKE PIXEL PERFECT WEBSITES</p>
         </div>
-        <div className="text-sm font-bold w-full">
-          MERN Stack Developer with 2 years of experience building performant,
-          user-focused web apps, and 1 year as a Lecturer teaching JavaScript
-          and databases. Combines hands-on development expertise with a talent
-          for clear technical communication and mentorship.
+        <div className="text-xl font-bold w-full">
+          FULL Stack Developer with 3 years of experience building performant,
+          user-focused web apps.
         </div>
         <div>
           <TechStack />
